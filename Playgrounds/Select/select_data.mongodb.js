@@ -1,0 +1,26 @@
+// DEFINE O NOME DO BD
+const database = 'Libri_DB'
+
+// DEFINE O NOME DA COLLECTION
+const collection = 'Libri-Collection'
+
+//ACESSO AO BANCO DE DADOS: Libri_DB
+use(database)
+
+// SELECIONE TODOS OS DADOS/ARQUIVOS DA COLLECTION
+// db[collection].find()
+
+// SELECIONE DADOS/ARQUIVOS DA COLLECTION UTILIZANDO UM CRITÉRIO DE BUSCA
+// db[collection].find(
+//     { "categoria": "Ficção Científica" }, //DEFININDO UM CRITÉRIO PRA BUSCA
+//     {"_id" : 0, "codigo" : 0, "imagem" : 0} //DEFININDO ELEMENTOS COMO FALSE PARA EXCLUIR DA BUSCA
+// )
+
+// TESTE DE REQUISIÇÃO SEM CRITÉRIO DE BUSCA, MAS POR EXCLUSÃO DE CAMPOS (INCLUINDO UM CAMPO "ÚNICO")
+// db[collection].find(
+//     {}, //DEFININDO UM CRITÉRIO (NULO) PRA BUSCA
+//     {"_id" : 0, "codigo" : 0, "imagem" : 0, "categoria": 0} //DEFININDO ELEMENTOS COMO FALSE PARA EXCLUIR DA BUSCA
+// )
+
+// SELECIONE DADOS/ARQUIVOS DA COLLECTION UTILIZANDO UM CRITÉRIO DE BUSCA "INCOMPLETO" (STRING)
+db[collection].find({ "autor": /asimov/i }) //BUSCANDO PELO TEXTO ENTRE AS "/" (i => TORNANDO POSSÍVEL A "IGUALIDADE" ENTRE AS LETRAS MAISCULAS E MINUSCULAS)
