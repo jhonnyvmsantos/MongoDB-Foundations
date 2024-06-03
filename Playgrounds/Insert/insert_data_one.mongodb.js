@@ -10,10 +10,12 @@ use(database)
 //INSERE 1 DOCUMENTO DE DADOS NA COLLECTION
 db[collection].insertOne(
     {
-        "codigo": "4",
-        "titulo": "Robôs e Império",
+        "codigo":"1",
+        "titulo": "As Cavernas de Aço",
         "autor": "Isaac Asimov",
-        "descricao": "A humanidade evoluiu muito a partir então, e, para desgosto dos Siderais, o plano delineado por Baley finalmente começa a dar certo. Mas o universo se encontra em um impasse, enquanto cientistas poderosos e vingativos ameaçam destruir a Terra e tudo o que ela representa.",
-        "imagem": "/livros/robos_imperio.jpg"
-    }
+        "descricao": "As Cavernas de Aço, de Isaac Asimov, é o primeiro romance da consagrada Série dos Robôs, uma das mais populares da ficção científica. A história nasceu de um desafio: Asimov queria provar para seu editor que a ficção científica não era limitada e poderia ser incorporada a qualquer gênero literário, inclusive nos dramas policiais.",
+        "imagem":"/livros/cavernas_aco.jpg",
+        "valor": 120,
+        "categoria":"Ficção Científica"
+      },
 );

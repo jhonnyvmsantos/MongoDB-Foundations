@@ -8,7 +8,7 @@ const collection = 'Libri-Collection'
 use(database)
 
 // SELECIONE TODOS OS DADOS/ARQUIVOS DA COLLECTION
-// db[collection].find()
+db[collection].find()
 
 // SELECIONE DADOS/ARQUIVOS DA COLLECTION UTILIZANDO UM CRITÉRIO DE BUSCA
 // db[collection].find(
