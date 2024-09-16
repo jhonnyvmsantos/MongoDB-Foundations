@@ -1,9 +1,15 @@
 operadores de comparação
 
-	padrão			Mongo
+Padrão de Operadores (MongoDB):
+
 <  -- menos que -------------- $lt 
+
 >  -- maior que -- ------------$gt 
+
 <= -- menor ou igual a  ------ $lte
+
 >=  -- maior que ou igual a -- $gte
+
 = -- igual a ----------------- $eq
+
 !=  -- diferente de ---------- $ne
